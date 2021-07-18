@@ -13,7 +13,7 @@ I have a few knowledge in HTML and CSS.
 
 ``` 
 html 
-<head>
+<head style="backgrond-color: #ff0000">
 	<title>Формы2</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 </head>
@@ -27,10 +27,10 @@ html
 		<p>Пароль</p>
 		<input placeholder="Пароль" tabindex="2" type="password" name="userpass" value="">
 	</div>
-      <div>
+      <section>
 	    <p>Телефон</p>
 	    <input placeholder="Телефон" tabindex="3" type="tel" name="" value="">
-	    </div>
+	    </section>
 	 <div>
     </div>
 <div>

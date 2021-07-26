@@ -8,7 +8,7 @@ background: -moz-linear-gradient(top,  rgba(230,240,163,1) 0%, rgba(244,205,61,1
 background: -webkit-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(244,205,61,1) 31%,rgba(244,205,61,1) 31%,rgba(234,215,42,1) 57%,rgba(219,240,67,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  rgba(230,240,163,1) 0%,rgba(244,205,61,1) 31%,rgba(244,205,61,1) 31%,rgba(234,215,42,1) 57%,rgba(219,240,67,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
-font-size: 22px;
+font-size: 23px;
 }
 
 a:link {
@@ -23,18 +23,12 @@ header {
 figcaption {
     padding: 0 50px;
     font-style: italic;
+    font-size: 22px;
 }
 nav li {
-    padding: 0;
-    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-li {
-    margin: 10px;
-    padding: 10px;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 h1 {
     color: darkred;
     padding-left: 350px;
@@ -47,13 +41,12 @@ nav {
     left: 300px;
     bottom: 60px;
     display: inline-block;
-   
-}
-.navig {
-    color: darkred;
     font-weight: 600;
     font-size: 25px;
+    color: darkred;
+   
 }
+
 .photo {
     border: 1px solid black;
     width: 250px;
@@ -68,10 +61,6 @@ object-fit: cover;
 h2 {
     color: darkred;
     padding-left: 550px;
-}
-.name   {
-    padding: 20px;
-    font-size: 30px;
 }
 
 .continf {
@@ -106,4 +95,54 @@ footer {
 
 h3 {
     padding-left: 550px;
+}
+.name {
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+section {
+    margin: 10px 0px 20px 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.about {
+    font-weight: normal;
+}
+.skl {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 15px;
+    
+}
+.skl_two {
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 15px;
+    font-style: italic;
+}
+.codeinf {
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 15px;
+    font-style: italic;
+}
+code {
+    font-weight: normal;
+}
+.exp {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 15px;
+}
+.edu {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 15px;
+}
+.lng {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 15px;
 }

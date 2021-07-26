@@ -1,0 +1,109 @@
+body {
+    border: grey solid 2px;
+    margin: 20px auto;
+    min-width: 400px;
+    max-width: 1200px;
+background: rgb(230,240,163); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(230,240,163,1) 0%, rgba(244,205,61,1) 31%, rgba(244,205,61,1) 31%, rgba(234,215,42,1) 57%, rgba(219,240,67,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(244,205,61,1) 31%,rgba(244,205,61,1) 31%,rgba(234,215,42,1) 57%,rgba(219,240,67,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(230,240,163,1) 0%,rgba(244,205,61,1) 31%,rgba(244,205,61,1) 31%,rgba(234,215,42,1) 57%,rgba(219,240,67,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
+font-size: 22px;
+}
+
+a:link {
+    color: rgb(66, 86, 153);
+}
+a:visited{
+    color: rgb(66, 86, 153);
+}
+header {
+    border-bottom: 1px solid  brown;
+}
+figcaption {
+    padding: 0 50px;
+    font-style: italic;
+}
+nav li {
+    padding: 0;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: darkred;
+    padding-left: 350px;
+    font-style: italic;
+}
+nav {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    left: 300px;
+    bottom: 60px;
+    display: inline-block;
+   
+}
+.navig {
+    color: darkred;
+    font-weight: 600;
+    font-size: 25px;
+}
+.photo {
+    border: 1px solid black;
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+}
+.myphoto {
+width: 100%; 
+height: 100%;
+object-fit: cover; 
+}
+h2 {
+    color: darkred;
+    padding-left: 550px;
+}
+.name   {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.continf {
+    font-weight: 400;
+}
+.useskl {
+    font-style:oblique;
+    margin: 20px;
+}
+footer {
+    border-top: 1px solid brown;
+}
+.logoinf {
+    margin: 20px 0 0 50px;
+    width: 300px;
+    height: 150px;
+}
+.logo {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain; 
+}
+.gitlink {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    width: 250px;
+    left: 550px;
+    bottom: 100px;
+}
+
+h3 {
+    padding-left: 550px;
+}

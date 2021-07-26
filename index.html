@@ -8,12 +8,12 @@
 <body>
     <header>
 <h1>CV Aleksandr Golamonov</h1>
-<figure>
-    <img src="img/X07rfeTFCuk.jpg" alt="There is my photo" width="50px" height="50px">
+<figure class="photo">
+    <img src="img/X07rfeTFCuk.jpg" alt="There is my photo" class="myphoto">
     <figcaption>This is my photo</figcaption>
 </figure>
 <nav>
-   <ul> <h3>Navigation</h3>
+   <ul> <span class="navig">Navigation</span>
        <li><a href="#main"> Main information</a></li>
        <li><a href="#con">Contacts</a></li>
        <li><a href="#about">About me</a></li>
@@ -30,16 +30,13 @@
         <h2>My CV</h2>
         <ol>
             <li id="main"> Main information: </li>
-                <div>Aleksandr Golamonov</div>
+                <div class="name">Aleksandr Golamonov</div>
             <li id="con">Contacts:</li>
-                <section>
-                    <h3>Contact information</h3>
-                    <ul>
-                        <li>Belarus, Minsk</li>
-                        <li>alex-89fish@tut.by</li>
-                        <li>https://vk.com/id25137523</li>
+                    <ul >
+                        <li class="continf">Belarus, Minsk</li>
+                        <li class="continf">alex-89fish@tut.by</li>
+                        <li class="continf">https://vk.com/id25137523</li>
                     </ul>
-                </section>
             <li id="about"> About me:</li>
             <div>I am a beginner in IT and it is my first course in this area.
                  But I want to start study JS for change my life. 
@@ -48,14 +45,14 @@
             <li id="skl">Skills:</li>
             <div>I have a few knowledge in HTML and CSS.</div>
             <ul>
-                <p>But I have some useful skills:</p>
-                <li>Basic knowlage in computer scince</li>
-                <li>Analitical thinking</li>
-                <li>Purposefulness</li>
-                <li>Greate motivation</li>
+                <div class="useskl">But I have some useful skills:</div>
+                <li class="continf">Basic knowlage in computer scince</li>
+                <li class="continf">Analitical thinking</li>
+                <li class="continf">Purposefulness</li>
+                <li class="continf">Greate motivation</li>
             </ul>
             <li id="code">Code exapmle:</li>
-            <div>This is code from my JS study</div>
+            <p class="codeinf">This is code from my JS study:</p>
             <code> 
               function marry (man,woman) {
                   woman.husband=man;
@@ -87,14 +84,13 @@
         </ol>
     </main>
     <footer>
-        <div>
-            <a href="https://rs.school/js/" target="_blank"> <img src="img/rs_school_js.svg" alt="Logo"></a>
+        <div class="logoinf">
+            <a href="https://rs.school/js/" target="_blank"> <img src="img/rs_school_js.svg" alt="Logo here" class="logo"></a>
         </div>
-        <div> 
-            <a href="https://github.com/Todd89/rsschool-cv" target="_blank"><h3>My GitHub</h3></a> 
-            <h3>2021</h3>
+        <div class="gitlink"> 
+            <a href="https://github.com/Todd89/rsschool-cv" target="_blank">My GitHub</a> 
         </div>
-  
+        <h3>2021</h3>  
     </footer>
 
 

@@ -149,30 +149,37 @@ section {
     margin-left: 15px;
     font-style: italic;
 }
+
+.container {
+  margin-top: -10px;
+  margin-bottom: 20xp;
+  padding-bottom: 10px ;
+}
+
 .codeinf {
     font-size: 25px;
     font-weight: normal;
     margin-left: 15px;
     font-style: italic;
 }
+
+.code-example {
+  display: flex;
+  justify-content: center;
+
+}
+
 code {
     font-weight: normal;
     text-shadow: none;
+    white-space: pre-wrap;
 }
 
-.code-example {
-  margin: 0px 150px 0px 0px;
-}
+
 .exp {
     font-size: 25px;
     font-weight: normal;
     margin: 15px;
-}
-
-.container {
-  margin-top: -10px;
-  margin-bottom: 20xp;
-  padding-bottom: 10px ;
 }
 
 .examples {

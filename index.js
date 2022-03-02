@@ -1,1 +1,39 @@
-console.log("145/150 \n valid layout 10 \n semanyic layout 16 (8 sematics tegs) \n use heading 10 \n use css style 10 \n block in center 10 \n adaptive navigation menu 10 \n img and alt 10 \n use list 10 \n contacts and information 10 \n code and information / highlight 10 \n use english 10 \n pull request 10 \n design 9 \nimages - llinks 10")
+const animItems = document.querySelectorAll('.anim-items');
+
+if (animItems.length > 0) {
+  
+  window.addEventListener ('scroll', animOnScroll)
+
+  function animOnScroll() {
+    for (let i = 0; i < animItems.length; i++) {
+      const animItem = animItems[i];
+      const animItemHight = animItem.offsetHeight; 
+      console.log( offSet(animItem))
+      const animItemOffset = offSet(animItem);
+      const animStart = 4;
+
+      let animItemPoint = window.innerHeight - (animItemHight / animStart);
+
+      if (animItemHight > window.innerHeight) {
+        animItemPoint = window.innerHeight - (window.innerHeight / animStart);
+      };
+
+      if ((scrollY > animItemOffset - animItemPoint ) && (scrollY < (animItemOffset + animItemHight))) {
+        animItem.classList.add ('_active');
+      } else {
+        animItem.classList.remove ('_active');
+      }
+    } 
+  }
+
+  function offSet(el) {
+    const rect = el.getBoundingClientRect();
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return (rect.top + scrollTop);
+  }
+
+  setTimeout (() => {
+    animOnScroll()
+  }, 300)
+}

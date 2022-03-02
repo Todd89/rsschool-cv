@@ -1,64 +1,86 @@
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: wheat;
+  --addition-color: rgb(165, 4, 165);
+  --grey-color: grey;
+  --list-background: rgba(234, 215, 42, 0.1);
+  --server-link: rgb(255, 0, 255) ;
+}
+
 body {
     border: grey solid 2px;
     margin: 20px auto;
     min-width: 400px;
     max-width: 1200px;
-    color:#5c3e0663;
-    text-shadow: 1px 1px  #3d2801;
-    background: rgb(230,240,163); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(230,240,163,1) 0%, rgba(244,205,61,1) 31%, rgba(244,205,61,1) 31%, rgba(234,215,42,1) 57%, rgba(219,240,67,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(230,240,163,1) 0%,rgba(244,205,61,1) 31%,rgba(244,205,61,1) 31%,rgba(234,215,42,1) 57%,rgba(219,240,67,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(230,240,163,1) 0%,rgba(244,205,61,1) 31%,rgba(244,205,61,1) 31%,rgba(234,215,42,1) 57%,rgba(219,240,67,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
+    color: var(--main-color);
+    text-shadow: 0.5px 0.5px  var(--addition-color); 
+    background: url("./assets/img/jpg/background.jpg"); /* Old browsers */
     font-size: 23px;
 }
 
-* {
-  scroll-behavior: smooth;
+.heading {
+  animation: move 2s ease-in-out;
 }
 
 header a {
   font-weight: 500;
-  color: rgb(70, 75, 46);
-  text-shadow: 1px 1px 2px rgb(179, 179, 36);
+  color: var(--main-color);
+  text-shadow: 1px 1px 2px var(--addition-color);
   text-decoration: none;
 }
 
 header {
     width: 100%;
-    border-bottom: 1px dotted  gray;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.top-block {
+  display: flex;
 }
 
 ul {
   padding: 0 20px;
 }
 
+nav {
+margin-bottom: 2vh;
+margin-left: 7vw;
+}
+
 .navig {
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: center;
   font-size: 75%;
- 
 }
 
 nav li {
   padding: 3px;
-  border: 1px solid rgb(201, 245, 7);
-  background-color: rgba(234, 215, 42, 0.253);
+  border: none;
+  background-color: var(--list-background);
   border-radius: 6px;
   text-transform: uppercase;
   list-style: none;
+  text-align: center;
 }
 
 .navig li:hover {
-  border: 2px solid rgb(173, 152, 29);
-  transition: border 0.3s;
+  border: 2px solid var(--main-color);
+  transition:0.3s;
+  transform: scale(1.1);
 }
+
 
 .info {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid var(--main-color);
 }
 
 figcaption {
@@ -69,8 +91,8 @@ figcaption {
 
 h1 {
     display: block;
-    color: darkred;
-    text-shadow: 1px 1px 2px red;
+    color: var(--main-color);
+    text-shadow: 1px 1px 2px var(--addition-color);
     margin: 10px auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 140%;
@@ -80,20 +102,21 @@ h1 {
 .photo {
     display: block;
     margin: 10px auto 25px;
-    border: 2px solid rgb(158, 235, 15);
-    width: 20%;
-    border-radius: 5px;
-    
+    border: 2px solid var(--addition-color);
+    width: 25%;   
+    animation: move 3s ease-in-out;
 }
+
     .myphoto {
     width: 100%; 
     height: 100%;
     object-fit: cover; 
 }
+
 .cv-text {
     display: block;
     margin: 25px 45%;
-    color: darkred;
+    color: var(--main-color);
     text-shadow: 1px 1px 2px red;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 140%;
@@ -103,20 +126,24 @@ h1 {
 .continf {
     font-weight: 400;
 }
+
 .useskl {
-    font-style:oblique;
+    font-style: oblique;
     margin: 20px;
 }
+
 footer {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px dotted gray;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--grey-color);
 }
+
 .logoinf {
     margin: 20px 0 0 50px;
     width: 300px;
     height: 150px;
 }
+
 .logo {
     width: 100%; 
     height: 100%;
@@ -134,15 +161,18 @@ section {
     font-weight: bold;
     font-size: 25px;
 }
+
 .about {
     font-weight: normal;
 }
+
 .skl {
     font-size: 25px;
     font-weight: normal;
     margin: 15px;
     
 }
+
 .skl_two {
     font-size: 25px;
     font-weight: normal;
@@ -151,9 +181,9 @@ section {
 }
 
 .container {
-  margin-top: -10px;
-  margin-bottom: 20xp;
-  padding-bottom: 10px ;
+    margin-top: -10px;
+    margin-bottom: 20xp;
+    padding-bottom: 10px ;
 }
 
 .codeinf {
@@ -164,8 +194,8 @@ section {
 }
 
 .code-example {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -182,11 +212,18 @@ code {
     margin: 15px;
 }
 
-.examples {
-display: flex;
-justify-content: space-around;
-margin-bottom: 20px;
+  .examples {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
+
+.examples-block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
 .links-images {
   display: block;
   width: 20%;
@@ -194,29 +231,42 @@ margin-bottom: 20px;
   text-decoration: none;
   text-shadow: none;
   text-align: center;
-  color:#4e3404;
+  color: var(--main-color);
+}
+
+.race-server {
+  width: 45%;
+  font-size: 20px;
+  text-decoration: underline;
+  text-shadow: none;
+  text-align: center;
+  color: var(--main-color);
 }
 
 .foot {
     display: flex;
     justify-content: space-around;
 }
+
 .gitlink {
   margin-top: 35px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
 }
+
 footer a {
   font-weight: 500;
-  color: rgb(10, 10, 10);
-  text-shadow: 1px 1px 2px rgb(179, 179, 36);
+  color: black;
+  text-shadow: 1px 1px 2px var(--list-background);
   text-decoration: none;
 }
 .edu {
+
     font-size: 25px;
     font-weight: normal;
     margin: 15px;
 }
+
 .lng {
     font-size: 25px;
     font-weight: normal;
@@ -227,4 +277,30 @@ footer a {
     margin: 10px auto;
     color: rgb(10, 10, 10);
     text-shadow: none;
+}
+
+
+/* Animation */
+
+.anim-items {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
